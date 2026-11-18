@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>приватный майнкрафт сервер - CHM</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body class="main_body">
+    <%- include('blocks/header.ejs') %>
+    <div class="main_title">
+        <h1 class="main_title_left" >CHM - это модовый майнкрафт сервер с 400+ модами и адонами на магию технику и на много еще чего ^w^</h1>
+        <h1 class="main_title_right" >версия майнкрафта - 1.21.1<br> скачать сборку можно здесь</h1>
+    </div>
+
+
+<div class="copy_btn_container">
+    <button class="copy_btn" data-clipboard-text="rog-server.home.kg">
+        копировать IP
+    </button>
+</div>
+
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/img/img1.png" alt="1"></div>
+        <div class="swiper-slide"><img src="/img/img2.png" alt="2"></div>
+        <div class="swiper-slide"><img src="/img/img3.png" alt="3"></div>
+        <div class="swiper-slide"><img src="/img/img4.png" alt="4"></div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+
+
+  <!-- СКРИПТЫ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+
+    <script>
+    const clipboard = new ClipboardJS('.copy_btn');
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,       
+        spaceBetween: 10,      
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next', 
+            prevEl: '.swiper-button-prev', 
+        },
+    });
+</script>
+</body>
+</html>
